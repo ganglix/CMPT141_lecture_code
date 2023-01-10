@@ -16,7 +16,13 @@ quotient = number of subtracted divisors -1
 
 """
 
+def int_divisor(dividend, divisor):
+    remainder = dividend - divisor
+    count = 1
+    while remainder > 0:
+        remainder = remainder - divisor
+        count = count + 1
+    return count - 1
 
-
-
+print( int_divisor(1, 3))
 
