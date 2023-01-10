@@ -18,6 +18,9 @@ print(a['passcode'])
 
 # operators
 # arithmetic
-+, -, /, *, //
-a ** b
-%
+# +, -, /, *, //
+# a ** b
+# %
+
+
+# things I want to mention on Thursday: re-assign variable, I/O
