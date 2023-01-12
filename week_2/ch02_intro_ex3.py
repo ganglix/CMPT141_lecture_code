@@ -1,5 +1,5 @@
 # atomic data : int, float, boolean (True or False)
-# compound data :
+# compound data : string, list, tuple, dictionary
 # string,
 'apple'
 "apple"
@@ -23,4 +23,6 @@ print(a['passcode'])
 # %
 
 
-# things I want to mention on Thursday: re-assign variable, I/O
+
+
+# things I want to mention on Thursday: re-assign variable, I/O ch03
