@@ -15,7 +15,7 @@ count how many of divisors have been subtracted
 quotient = number of subtracted divisors -1
 
 """
-
+# you don't have to fully understand the code. Just appreciate how readable it is (almost like pseudocode)
 def int_divisor(dividend, divisor):
     remainder = dividend - divisor
     count = 1
