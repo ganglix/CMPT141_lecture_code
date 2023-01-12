@@ -1,4 +1,4 @@
-# What Python function displays text on the console?
+# What Python function displays text on the console? (how about the return value?)
 
 
 

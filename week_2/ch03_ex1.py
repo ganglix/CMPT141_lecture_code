@@ -16,13 +16,10 @@ cash = 50
 # print("Four pillows will cost ", pillow_cost * 4, ".")
 
 #
-# (c)
+# # (c)
 # print("One blanket and two pillows will cost $",
 #       blanket_cost + pillow_cost * 2, ". If I pay with $", cash,
 #       ", I will have $", (cash - (blanket_cost + pillow_cost * 2)),
-#       " left.", sep="")
-#
-# print(f"One blanket and two pillows will cost ${blanket_cost + pillow_cost * 2}. If I pay with ${cash}")
+#       "left.")
 
-result = print("hello")
-print(result)
+
