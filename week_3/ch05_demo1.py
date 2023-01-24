@@ -8,23 +8,14 @@ url = "www.engineering.usask.ca"
 # find the location of the first period in the url
 
 
-
-
 # count the number of periods in the url
 
 
-
-
 # remove white space
-# .strip(), .rstrip(), .lstrip()
-
-
 
 
 # count the number of characters in the url after removing "www."
-# (gotta be careful - don’t just assume a function does what you think!)
-
-
+# (!gotta be careful - don’t just assume a function does what you think!)
 
 
 # # more methods:
@@ -32,8 +23,5 @@ url = "www.engineering.usask.ca"
 # .lower()
 # when are they useful
 # immutable, they create a copy
-
-
-
 
 # how do I know what kind of methods are out there? How do I know the syntax/usage?

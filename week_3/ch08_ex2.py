@@ -1,0 +1,13 @@
+a = False
+b = False
+c = True
+
+print(
+    not b and c,
+    b or not c,
+    not b or c,
+    not (b and c),
+    b and c or a
+)
+
+print(False == 1 > 2)
