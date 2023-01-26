@@ -1,9 +1,9 @@
 # Indexing and Slicing of !Sequences!
 
-
 # •What is indexing used for?
 # •What does a positive index mean?
 # •What does a negative index mean?
+
 
 
 # •What is slicing used for?
@@ -11,4 +11,6 @@
 # numbers in a slicing operation?
 
 
-# mention omitted value
+
+
+# I want to mention omitted value
