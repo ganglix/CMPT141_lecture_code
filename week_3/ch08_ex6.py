@@ -26,4 +26,6 @@ def letter_grade(grade):
         print("F")
 
 
+# mention if-if else-if if-else,
+
 # discussion: room to improve?

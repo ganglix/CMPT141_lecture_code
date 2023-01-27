@@ -7,7 +7,7 @@
 
 
 
-# things to mention if-if else-if if-else, character vs letter
+# things to mention  character vs letter
 
 
 
