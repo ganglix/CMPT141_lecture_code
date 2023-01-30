@@ -11,14 +11,56 @@ def is_valid_username(username):
 # Testing - black box
 # black box reasoning
 
+#     - 1-18 characters long
+"""
+input: "a"
+output(expected): True
+reason: string contains one char
+
+input: "a" * 18
+output: True
+reason: string contains 18 chars
+
+input: ""
+output: False
+resaon: empty string is not valid
+
+input: "a"*19
+output: False
+reason: 19 chars out of range
+"""
 
 
+#- underscore is allowed if it’s not the first character
+"""
+input: "_"
+output: False
+reason: string starts with _, and length is one.
+
+input: "a_a"
+output: True
+reason: string has a _ in the middle
+
+input: "a_"
+output: True
+reason: string has a _ at the end
+
+"""
 
 # test driver example
 
+inputs = "a" * 18
+output_expected = True
+reason = "string contains 18 chars"
 
+result = is_valid_username(inputs)
+if result != output_expected:
+    print("fault found!",
+          "test case input: ", inputs,
+          "expected: ", output_expected,
+          "got: ", result)
 
-
+# Jan 30 test drive finished.
 
 
 

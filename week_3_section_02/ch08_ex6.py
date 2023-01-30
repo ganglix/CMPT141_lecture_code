@@ -12,6 +12,8 @@ def letter_grade(grade):
     :param grade: int, numeric grade
     :return: None
     """
+    import math
+    grade = math.ceil(grade)
     if grade <= 100 and grade >= 95:
         print("A+")
     elif grade <= 94 and grade >= 85:
@@ -25,7 +27,21 @@ def letter_grade(grade):
     else:
         print("F")
 
+# letter_grade(95)
+# if condition:
+#     # do something
+# else:
+#     if another condition:
+#         # do something else
+#     else:
+#         # something else
+
+# if:
+# elif:
+# else:
 
 # mention if-if else-if if-else,
 
 # discussion: room to improve?
+
+letter_grade((94.5))
