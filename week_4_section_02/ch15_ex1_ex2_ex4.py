@@ -23,13 +23,28 @@ reason: string contains 18 chars
 
 input: ""
 output: False
-resaon: empty string is not valid
+reason: empty string is not valid
 
 input: "a"*19
 output: False
 reason: 19 chars out of range
 """
 
+# - can be letters and/or numbers
+"""
+input: "a1"
+output: True
+reason： username contain both letter and number
+
+input: "10"
+output: True
+reason： username contain only number
+
+input: "@!"
+output: False
+reason： username contain neither number nor letter
+
+"""
 
 #- underscore is allowed if it’s not the first character
 """
@@ -58,7 +73,8 @@ if result != output_expected:
     print("fault found!",
           "test case input: ", inputs,
           "expected: ", output_expected,
-          "got: ", result)
+          "got: ", result,
+          "test reason", reason)
 
 # Jan 30 test drive finished.
 
