@@ -100,4 +100,4 @@ for test_case in test_suite:
         test_pass = False
 
 if test_pass:
-    print("All test passed!")
+    print("All tests passed!")
