@@ -82,33 +82,17 @@ if result != output_expected:
           "got: ", result,
           "test reason: ", reason)
 
-# lecture finished here
+inputs = "_"
+output_expected = False
+reason = "input has _ at the beginning and has 1 char."
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+result = is_valid_username(inputs)
+if result != output_expected:
+    print("Fault found!",
+          "test case input: ", inputs,
+          "expected output: ", output_expected,
+          "got: ", result,
+          "test reason: ", reason)
 
 
 
