@@ -34,7 +34,7 @@ while True:
     n_attempts += 1
     if code == passcode:
         break   # it will stop the loop right here without checking while
-        print("this message will show up the break failed")
+        print("this message will show up if the break failed")
 
 print(f"{n_attempts} attempt(s) made.")
 
