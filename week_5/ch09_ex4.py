@@ -10,22 +10,10 @@
 M = 10
 N = 5
 
-
-
-
-
-
-
-
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-# alternative solution
-# for row in range(N):
-#     # print row
-#     for col in range(M):
-#         print(f"({col}, {row})", end=" ")
-#     print()
+for row in range(N):
+    # print row
+    for col in range(M):
+        print(f"({col},{row})", end=" ")
+        # print("(", col,",", row, ")", sep="", end=" ")
+    print()
 
