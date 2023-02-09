@@ -7,7 +7,8 @@ s = "piece"
 # not using for-loop
 
 
-# using a for loop
+
+# using a for-loop
 
 
 

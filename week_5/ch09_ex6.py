@@ -24,11 +24,10 @@
 # while dividend % divisor != 0:
 #     divisor = divisor + 1
 
-
 # (e)
-low = -100
-high = 100
-msg = " Enter int between " + str(low) + " to " + str(high) + ":"
-num = int(input(msg))
-while num >= low or num <= high:
-    num = int(input(msg))
+# low = -100
+# high = 100
+# msg = " Enter int between " + str(low) + " to " + str(high) + ":"
+# num = int(input(msg))
+# while num >= low or num <= high:
+#     num = int(input(msg))
