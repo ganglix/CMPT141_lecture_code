@@ -47,11 +47,10 @@ print(pkg_weights)
 # • number of parcels removed from pkg_weights
 
 
+light_pkgs.sort()
+print(light_pkgs)
+print("number of light packages:", len(light_pkgs))
 
-#
-# light_pkgs.sort()
-# print(light_pkgs)
-# print("number of light packages:", len(light_pkgs))
 # print("number of heavy parcels removed ", count, "or", len(heavy_pkgs))
 
 
