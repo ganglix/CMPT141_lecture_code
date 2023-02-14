@@ -30,14 +30,15 @@ print(food_msgs)
 
 # (b) create a new copy of food_msgs where messages are
 # appended with "#yawn"
-# food_msgs_new = food_msgs.copy()
-# for m in food_msgs_new:
-#     m.append("#yawn")
-
-
 food_msgs_new = food_msgs.copy()
-[m.append("#yawn") for m in food_msgs_new]
-# list comprehension takes effect outside of the list comprehension
-# because list is mutable and append method does not return a new list
-print(food_msgs_new)
+for m in food_msgs_new:
+    m.append("#yawn")
+
+
+# take a look at this list comprehension
+# food_msgs_new = food_msgs.copy()
+returned = [m.append("#yawn") for m in food_msgs_new]
+
+# print(food_msgs_new)
+# print(returned)
 
