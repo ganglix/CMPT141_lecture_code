@@ -11,15 +11,19 @@ provs = ["AB", "BC", "MB", "NB", "NL", "NT", "NS", "NU", "ON", "PE", "QC", "SK",
 pops = [4200, 4680, 1290, 750, 530, 40, 940, 40, 13790, 150, 8260, 1130, 40]
 
 # # create a list first, and use for loop to append
+# prov_pops = []
+#
+# for i in range(len(provs)):
+#     sublist = [ provs[i], pops[i] ]
+#     prov_pops.append(sublist)
+# print(prov_pops)
 
 
 # things I want to mention (pythonic). list comprehension later
 
-
-# prov_pops = []
-# for this_prov in provs:
-#     for this_pop in pops:
-#         prov_pops.append([this_prov, this_pop])
-# print(prov_pops)
+prov_pops = []
+for this_prov, this_pop in zip(provs, pops):
+    prov_pops.append([this_prov, this_pop])
+print(prov_pops)
 
 

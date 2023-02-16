@@ -84,19 +84,27 @@ lis = ["a", "b", "c"]  # the element in a list can be anything
 # print(L)
 
 
-# doomed?
-L = [1, 2, 3, 4, 5, 6]
-another_L = L   # this will NOT create a new list
-L.remove(1)
-print(another_L)
+# # doomed?
+# L = [1, 2, 3, 4, 5, 6]
+# another_L = L   # this will NOT create a new list
+# L.remove(1)
+# print(another_L)
+#
+# L = [1, 2, 3, 4, 5, 6]
+# # another_L = L[:]   # this will create a new list clone
+# another_L = L.copy()   # this will also create a new list clone
+#
+# for value in another_L:
+#     L.remove(value)
+# print(L)
+#
+#
+# tu = ("a", "b", "c")
 
-L = [1, 2, 3, 4, 5, 6]
-# another_L = L[:]   # this will create a new list clone
-another_L = L.copy()   # this will also create a new list clone
 
-for value in another_L:
-    L.remove(value)
-print(L)
-
-
-tu = ("a", "b", "c")
+lis = [1, 1, 2, 3]
+lis_copy = lis[:]
+for item in lis:
+    lis_copy.remove(item)
+    if item in lis_copy:
+        print("duplicate: ", item)

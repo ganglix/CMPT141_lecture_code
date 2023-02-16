@@ -12,3 +12,13 @@ flu_case = [13, 14, 9, 16, 10, 18, 22, 19, 16, 22,
              111, 128, 120, 133, 134, 139, 127, 130, 141, 147,
              439, 236, 218, 209, 213, 244, 329, 197, 351, 325]
 
+days = range(1, len(flu_case)+1)
+
+import matplotlib.pyplot as plt
+# plt.plot(days, flu_case, "r--o")
+plt.plot(days, flu_case, color='r', linestyle="--", marker="o")
+plt.title("daily flu cases")
+plt.xlabel("day")
+plt.ylabel("cases")
+# plt.savefig("plot.tiff", dpi = 600)
+plt.show()

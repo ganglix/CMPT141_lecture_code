@@ -16,6 +16,11 @@ library = [["Pokemon!", 5, "Metal"],
            ["So Cold", 1, "Hard Rock"]]
 
 # -----------------------------------------
-best_playlist = [song for song in library]
+# the brackets work across multiple lines, so the one-liner list comprehension can be written in many lines
+best_playlist = [song for song in library     # song is the sublist in library
+                 if (song[1] == 4 or song[1] ==5) and (song[2] == "Metal" or "Hard Rock")] # paranthesis needed here
+
+# remember NAO? order of precedence not > and > or. If unsure, use paranthesis to ensure order of execution
+
 
 print(best_playlist)
