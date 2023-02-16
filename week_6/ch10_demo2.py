@@ -20,28 +20,11 @@ msgs = [["Forgot the recipe again! #nofood", 3],
 # (a) create list food_msgs of messages containing "#food"
 
 # for loop style:
-food_msgs = []
-for this_msg in msgs:
-    if "#food" in this_msg[0]:
-        food_msgs.append(this_msg)
 
-print(food_msgs)
 
 # list comprehension
 
 
 
 # (b) create a new copy of food_msgs where messages are
-# appended with "#yawn"
-food_msgs_new = food_msgs.copy()
-for m in food_msgs_new:
-    m.append("#yawn")
-
-
-# take a look at this list comprehension
-# food_msgs_new = food_msgs.copy()
-# returned = [m.append("#yawn") for m in food_msgs_new]
-
-# print(food_msgs_new)
-# print(returned)
-
+# appended with "#yawn" to the message

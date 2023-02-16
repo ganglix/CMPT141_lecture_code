@@ -15,3 +15,7 @@ library = [["Pokemon!", 5, "Metal"],
            ["Ghost Love Score", 1, "Metal"],
            ["So Cold", 1, "Hard Rock"]]
 
+# -----------------------------------------
+best_playlist = [song for song in library]
+
+print(best_playlist)

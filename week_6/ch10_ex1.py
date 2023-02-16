@@ -18,7 +18,7 @@ for p in pkg_weights:
 print(light_pkgs)
 
 # (b) Removes parcels from pkg_weights that exceed 15 lbs
-# for p in pkg_weights:   # iterating over a changing list, BIG mistake!!!
+# for p in pkg_weights:   # iterating over a size-changing list, BIG mistake!!!
 #     if p > 15:
 #         pkg_weights.remove(p)
 # print(pkg_weights)
@@ -31,11 +31,13 @@ print(light_pkgs)
 # print(pkg_weights)
 
 # not use a clone
+# step 1 get a list of heavy pkgs to be removed
 heavy_pkgs = []
 for p in pkg_weights:
     if p > 15:
         heavy_pkgs.append(p)
 
+# step 2 remove heavy pkgs from the original pkg list
 for p in heavy_pkgs:
     pkg_weights.remove(p)
 print(pkg_weights)
@@ -46,12 +48,11 @@ print(pkg_weights)
 # • number of parcels in light_pkgs
 # • number of parcels removed from pkg_weights
 
-
 light_pkgs.sort()
 print(light_pkgs)
 print("number of light packages:", len(light_pkgs))
 
-# print("number of heavy parcels removed ", count, "or", len(heavy_pkgs))
+print("number of parcels removed ", len(heavy_pkgs))
 
 
 

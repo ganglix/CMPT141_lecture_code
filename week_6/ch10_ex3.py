@@ -12,13 +12,9 @@ pops = [4200, 4680, 1290, 750, 530, 40, 940, 40, 13790, 150, 8260, 1130, 40]
 
 # # create a list first, and use for loop to append
 
-prov_pops = []
-for i in range(len(provs)):
-    prov_pops.append([provs[i], pops[i] ])
 
-print(prov_pops)
+# things I want to mention (pythonic). list comprehension later
 
-# things I want to mention (to be pythonic). list comprehension later
 
 # prov_pops = []
 # for this_prov in provs:
@@ -26,6 +22,4 @@ print(prov_pops)
 #         prov_pops.append([this_prov, this_pop])
 # print(prov_pops)
 
-
-print(prov_pops)
 
