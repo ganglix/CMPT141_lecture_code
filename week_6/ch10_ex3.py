@@ -24,6 +24,7 @@ pops = [4200, 4680, 1290, 750, 530, 40, 940, 40, 13790, 150, 8260, 1130, 40]
 prov_pops = []
 for this_prov, this_pop in zip(provs, pops):
     prov_pops.append([this_prov, this_pop])
+
 print(prov_pops)
 
 
