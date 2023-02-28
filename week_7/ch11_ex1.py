@@ -15,4 +15,33 @@ survey = {"Christopher": "vanilla",
           "Ani": "vanilla",
           "Gang": "chocolate"}
 
+# def icecream_survey(survey):
+#     result = {}  # key, flavour, value votes
+#     for name in survey:
+#         flavour = survey[name]
+#         if flavour in result:
+#             result[flavour] += 1
+#         else:
+#             result[flavour] = 1
+#     return result
+
+# def icecream_survey(survey):
+#     result = {}  # key, flavour, value votes
+#     for name in survey:
+#         flavour = survey[name]
+#         if flavour not in result:
+#             result[flavour] = 0  # initialize flavour record
+#         result[flavour] += 1
+#     return result
+
 def icecream_survey(survey):
+    result = {}  # key, flavour, value votes
+    for flavour in survey.values():
+        if flavour not in result:
+            result[flavour] = 0  # initialize flavour record
+        result[flavour] += 1
+    return result
+
+count_summary =  icecream_survey(survey)
+
+print(count_summary)

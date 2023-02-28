@@ -9,3 +9,8 @@ green_theme = {
 }
 # halve all of the green intensities (round down to nearest int)
 
+for component in green_theme:
+    # green_theme[component]['green'] = green_theme[component]['green']//2
+    green_theme[component]['green'] //= 2
+
+print(green_theme)
