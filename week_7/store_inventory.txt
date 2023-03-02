@@ -1,0 +1,5 @@
+Healing Herb,Heals minor wounds,25,0.25,5
+Antidote Vial,Cures poisonous wounds,50,1.25,3
+Paralysis Herb,Paralyzes enemy when thrown,75,0.35,
+Smoke Cloud,Creates distraction for escape,65,1.15,
+Fairie Dust,Casts light in the darkness,100,0.4,3

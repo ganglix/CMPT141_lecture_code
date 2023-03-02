@@ -2,57 +2,26 @@
 # maps extension numbers to employees
 
 # open
-# absolute path
-# path
-# f = open(path, "r")
+# absolute path: full directory
 
 # relative path
+path = "ext_directory_data.txt"  # by default, use current folder
+# # current folder .
+# "./ext_directory_data.txt"
+# # parent folder ..
+# "../week_7/ext_directory_data.txt"
 
-
+# open
+f = open(path, "r")   # r read
 # read and create the dictionary
-
+phoneBook = {}  # ext: name
+for line in f:
+    # clean the line and parse it # "\n" new line at the end of each line
+    line = line.rstrip().split(',')
+    ext = int(line[0])
+    name = line[1]
+    phoneBook[ext] = name
 # close
+f.close()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#--------- alternative solution----------------
-# # open
-# # absolute path
-# # path = "/Users/gangli/Library/CloudStorage/OneDrive-UniversityofSaskatchewan/CMPT141_big_folder/CMPT141_lecture_code/week_7/ext_directory_data.txt"
-# # f = open(path, "r")
-#
-# # relative path
-# f = open("../week_7/ext_directory_data.txt", "r")
-# # f = open("./subfolder/scientists_data.txt")
-#
-# # read and create the dictionary
-# phoneBook = {}
-# for line in f:
-#     line = line.rstrip().split(",")   #\n
-#     phoneBook[int(line[0])] = line[1]
-#
-# # close
-# f.close()
-# print(phoneBook)
+print(phoneBook)

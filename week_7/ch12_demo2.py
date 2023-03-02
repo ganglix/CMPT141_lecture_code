@@ -20,12 +20,16 @@ books = [
      "year_published": 1813}
 ]
 
-
 # open for writing
+f = open('my_books.txt', 'w')  # w write mode
 
 # for each book , write its title , author , year published in that order
-
+for book in books:  #book is a dict
+    line_to_write = book['title'] + ',' + book['author'] + ',' + str(book['year_published'])
+    f.write(line_to_write)
+    f.write('\n')   # tell f.write to write a new line
 # done writing , close file
+f.close()
 
 
 
@@ -42,22 +46,3 @@ books = [
 
 
 
-
-
-
-
-
-
-#--------------------- alternative way -----------------
-
-# # open for writing
-# f = open("my_books.txt", 'w')
-# # for each book , write its title , author , year published in that order
-# for book in books:
-#     # f.write(book["title"] + "," + book['author'] + "," + str(book['year_published']))
-#     line_to_write = ','.join([book["title"], book['author'],str(book['year_published'])])
-#     f.write((line_to_write))
-#     # f.write('\n')
-#
-# # done writing , close file
-# f.close()
