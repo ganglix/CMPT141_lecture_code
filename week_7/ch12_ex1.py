@@ -19,36 +19,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # ~~~~~~~ use with statement~~~~~~~~~~~~~~~~~
 
 # # open file for reading
