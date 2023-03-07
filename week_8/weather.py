@@ -82,15 +82,15 @@ def avg_monthly_temp(temperature_data, start_year,
 
 data = get_temperature_data()
 
-# Plot average mean, min and max monthly temperatures for all years.
-plt.plot(range(12), avg_monthly_temp(data, 1892, 2007, 7))  # average 
-plt.plot(range(12), avg_monthly_temp(data, 1892, 2007, 3))  # max
-plt.plot(range(12), avg_monthly_temp(data, 1892, 2007, 5))  # min
-plt.title('Average min, max, and overall avg. monthly temperature for Saskatoon, 1892-2007')
-plt.xlabel('Month')
-plt.ylabel('Deg. Celcius')
-plt.legend(['Average', 'Max', 'Min'])
-plt.draw()
+# # Plot average mean, min and max monthly temperatures for all years.
+# plt.plot(range(1,13), avg_monthly_temp(data, 1892, 2007, 7))  # average
+# plt.plot(range(1,13), avg_monthly_temp(data, 1892, 2007, 3))  # max
+# plt.plot(range(1,13), avg_monthly_temp(data, 1892, 2007, 5))  # min
+# plt.title('Average min, max, and overall avg. monthly temperature for Saskatoon, 1892-2007')
+# plt.xlabel('Month')
+# plt.ylabel('Deg. Celcius')
+# plt.legend(['Average', 'Max', 'Min'])
+# plt.draw()
 
 # We want to look at temps before and after cutoff_year.
 # give the year a name so we can more easily experiment with different years
