@@ -7,3 +7,4 @@
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/vcs.xml
 /.idea/.gitignore
+!/week_8/.ipynb_checkpoints/
