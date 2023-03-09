@@ -1,8 +1,7 @@
-# beyond basic python
+# beyond basic python - course requirement and continuing learning
 
 
 # numpy array
-
 
 # create an array
 ## 1D array vs list
@@ -12,8 +11,15 @@
 ## nD array vs list of lists of lists...
 
 
-# Arithmetic operation (element-wise) and some useful methods
+
+# indexing and slicing, nD
 
 
+# Arithmetic operation (element-wise) relational operation and some useful methods
 
-# indexing and slicing
+
+# -----------------beyond textbook--------------
+# broadcasting
+
+
+# clone with [:] or .copy()?
