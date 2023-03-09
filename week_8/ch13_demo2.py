@@ -27,9 +27,9 @@ def draw_histogram(image):
 
 # load image & draw image
 image = skdata.camera()
-# plt.gray()
-# plt.imshow(image)
-
+plt.gray()
+plt.imshow(image)
+plt.show()
 # compute & draw image's histogram
 # draw_histogram(image)
 
