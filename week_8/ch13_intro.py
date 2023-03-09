@@ -55,6 +55,7 @@ a = np.arange(4)
 # print(a * 10)
 
 
+
 # -----------------beyond textbook--------------
 # broadcasting
 # b = np.arange(9).reshape(3,3)
