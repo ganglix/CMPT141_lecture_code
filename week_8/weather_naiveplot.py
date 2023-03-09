@@ -5,16 +5,18 @@ import scipy.stats as stats
 def get_temperature_data():
     infile = open('saskatoon-airport-1892-2007.csv', 'r')
     # read but ignore the column headers
-    header_row = infile.readline()
+    # header_row = infile.readline()
     # split each row into a list of data items using commas a delimiters and
     # add the list of data items to the temperature_data list, giving us a
     # list of lists.
     # [ [],[],...,[] ]
 
     temperature_data = []
-
-    for line in infile:
-        temperature_data.append(line.rstrip().split(sep=','))
+    count = 0
+    for line in infile: # starts from the second line
+        if count>0:
+            temperature_data.append(line.rstrip().split(','))
+        count += 1
 
     infile.close()
     # Some columns of data need to be converted to floats.
@@ -54,7 +56,7 @@ def avg_monthly_temp(temperature_data, start_year,
     month_avg = [0.0] * 12  # running sum of yearly values for each month
     counts = [0] * 12  # running count of values added to each sum
 
-    for row in temperature_data:
+    for row in temperature_data: # row is sublist
         row_year = row[1]
         row_month = row[2]
         # if the data is not missing, and is within the right year range
