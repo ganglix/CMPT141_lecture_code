@@ -41,10 +41,10 @@ for r in range(0, height):
 # greenness[green == 0] = 0
 
 # 4. Plot histogram of greenness
-F = plt.figure()
-H, edges = np.histogram(greenness, bins=256)
-plt.bar(range(256), H, edgecolor='none')
-plt.xlim(0, 255)
+# F = plt.figure()
+# H, edges = np.histogram(greenness, bins=256)
+# plt.bar(range(256), H, edgecolor='none')
+# plt.xlim(0, 255)
 
 # 4. or use plt.hist to plot histogram
 # F = plt.figure()
@@ -86,15 +86,15 @@ segmentation = morph.binary_fill_holes(segmentation)
 #                      and segmentation[i - 1, j + 1])):
 #             segmentation_boundaries[i, j] = True
 
-# use the module function seg:
-segmentation_boundaries = seg.find_boundaries(segmentation)
-
-red[segmentation_boundaries] = 1.0
-green[segmentation_boundaries] = 0.0
-blue[segmentation_boundaries] = 0.0
-result = np.dstack([red, green, blue])
-segfig = plt.figure()
-io.imshow(result)
+# # use the module function seg:
+# segmentation_boundaries = seg.find_boundaries(segmentation)
+#
+# red[segmentation_boundaries] = 1.0
+# green[segmentation_boundaries] = 0.0
+# blue[segmentation_boundaries] = 0.0
+# result = np.dstack([red, green, blue])
+# segfig = plt.figure()
+# io.imshow(result)
 
 # # 8: Measure how close the segmentation is to the right answer
 #
